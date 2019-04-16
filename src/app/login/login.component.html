@@ -1,0 +1,29 @@
+
+  <div class="card">
+      <div class="card-header">
+          Login
+      </div>
+
+      <form [formGroup]="formgroup" (ngSubmit)="onSubmit()">
+          <div class="card-body">
+          
+              <input type="email" formControlName="email" class="form-control" placeholder="Email address" />
+              <br />
+              <input type="password" formControlName="password" class="form-control" placeholder="password" />
+              <br />
+          </div>
+          <div class="card-footer">
+              <input type="submit" class="btn btn-primary" value="Login" />
+          </div>
+      </form>
+      <hr />   
+  </div>
+
+  <!-- <div>  
+    <span *ngIf="formgroup.controls.email.errors['required']" class="alert alert-danger">Email is required.</span><br>
+    <span *ngIf="formgroup.controls.email.errors['email']" class="alert alert-danger">Email is Not Valid.</span><br>
+
+    <div *ngIf="formgroup.controls.password.errors['minlength']" class="alert alert-danger">password must be at least 5 characters long.</div><br> 
+    <div *ngIf="formgroup.controls.password.errors['maxlength']" class="alert alert-danger">password must not exceded 8 characters long.</div><br>  
+</div>  -->
+

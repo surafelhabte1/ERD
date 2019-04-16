@@ -1,0 +1,105 @@
+{
+  "employee": [
+    {
+      "id": 0,
+      "name": "Abebe",
+      "mname": "Kebede",
+      "lname": "Lemma",
+      "tel": "011-550-86-73",
+      "departement": "Management",
+      "position": "Manager"
+    },
+    {
+      "id": 1,
+      "name": "Abebe",
+      "mname": "Kebede",
+      "lname": "Lemma",
+      "tel": "011-550-86-73",
+      "departement": "Management",
+      "position": "Manager"
+    },
+    {
+      "id": 2,
+      "name": "Abebe",
+      "mname": "Kebede",
+      "lname": "Lemma",
+      "tel": "011-550-86-73",
+      "departement": "Guard",
+      "position": "Deputy Manager"
+    },
+    {
+      "id": 3,
+      "name": "surafel",
+      "mname": "Habte",
+      "lname": "H",
+      "tel": "0115508673",
+      "departement": "Guard",
+      "position": "Junior Software Developer"
+    },
+    {
+      "id": 4,
+      "name": "surafel",
+      "mname": "Habte",
+      "lname": "H",
+      "tel": "0115508673",
+      "departement": "Guard",
+      "position": "Junior Software Developer"
+    },
+    {
+      "id": 5,
+      "name": "surafel",
+      "mname": "Habte",
+      "lname": "H",
+      "tel": "0115508673",
+      "departement": "Guard",
+      "position": "Junior Software Developer"
+    },
+    {
+      "id": 6,
+      "name": "surafel",
+      "mname": "Habte",
+      "lname": "H",
+      "tel": "0115508673",
+      "departement": "Guard",
+      "position": "Junior Software Developer"
+    },
+    {
+      "id": 7,
+      "name": "surafel",
+      "mname": "Habte",
+      "lname": "H",
+      "tel": "0115508673",
+      "departement": "Guard",
+      "position": "Junior Software Developer"
+    },
+    {
+      "id": 8,
+      "name": "surafel",
+      "mname": "Habte",
+      "lname": "H",
+      "tel": "0115508673",
+      "departement": "Guard",
+      "position": "Junior Software Developer"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "fullname": "Abebe Kebede",
+      "email": "abekebe@example.com",
+      "password": "abcd1234"
+    },
+    {
+      "id": 2,
+      "fullname": "surafel habte",
+      "email": "sura@example.com",
+      "password": "abcd1234"
+    },
+    {
+      "id": 3,
+      "fullname": "surafel hab",
+      "email": "sura@example.com",
+      "password": "abcd@1234"
+    }
+  ]
+}

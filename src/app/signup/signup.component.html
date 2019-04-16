@@ -1,0 +1,24 @@
+    <div class="card">
+      <div class="card-header">
+          Signup
+      </div>
+      <form [formGroup]="formgroup" (ngSubmit)="onSubmit()">
+          <div class="card-body">
+                <input type="text" formControlName="fullName" class="form-control" placeholder="Full Name" />
+                <br />
+                <input type="email" formControlName="email" class="form-control" placeholder="Email Address" />
+                <br />
+                <input type="password" formControlName="password" class="form-control" placeholder="Password" />
+                <br />
+                <input type="password" formControlName="repassword" class="form-control" placeholder="Confirm password" />
+                <br />
+            </div>
+            <div class="card-footer">
+                <input type="submit" class="btn btn-primary" value="Signup" />
+            </div>
+      </form>
+ 
+    </div>
+
+
+  

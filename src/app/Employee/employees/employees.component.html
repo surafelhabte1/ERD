@@ -1,0 +1,55 @@
+<app-dashboard></app-dashboard>
+<hr />
+    <div class="card-header">
+      <form [formGroup]="formgroup" (ngSubmit)="onSubmit()">
+        <input type="search" placeholder="Enter Employee Name to search..." formControlName="query" class="form-control"/><br>
+        <input type="submit" value="search" class="btn btn-primary"/>
+      </form>
+    </div>
+    <br>
+    <a class="btn btn-success" routerLink="/admin/employee/new">Add New Employee</a> |
+    <button class="btn btn-danger" (click)="delete_employee()">Delete Employee</button>
+    <hr /> 
+    <!-- <table class="table table-hover">
+        <thead> 
+          <tr> 
+            <td>Check</td> 
+            <td>ID</td>
+            <td>Name</td>
+            <td>Middle Name</td>
+            <td>Last Name</td>
+            <td>Telephone</td>
+            <td>Departement</td>
+            <td>position</td>
+            <td>Edit</td>
+          </tr>   
+        </thead> 
+        <tbody>  
+          <tr *ngFor="let emp of employees; let j = index">
+            <td><input type="checkbox" (change)="select_employee(j,emp.id,chbox.value)" [formControl]="chbox" /></td>
+            <td>{{ emp.id }}</td>
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.mname }}</td>
+            <td>{{ emp.lname }}</td>
+            <td>{{ emp.tel }}</td>
+            <td>{{ emp.departement }}</td>
+            <td>{{ emp.position }}</td>
+            <td><input type="button" class="btn btn-success" value="Edit" (click)="edit_employee(emp.id)" /></td>
+          </tr>
+        </tbody>  
+    </table>
+    <hr /> -->
+
+    <ejs-grid [dataSource]='employees' [allowPaging]='true' [allowSorting]='true' [allowGrouping]='true'>
+      
+          <e-columns>
+            <e-column field='id' headerText='Employee ID' width='120'></e-column>
+            <e-column field='name' headerText='Name' textAlign='Right' format='c2' width='120'></e-column>
+            <e-column field='mname' headerText='Middle Name' width='140'></e-column>
+            <e-column field='lname' headerText='Last Name' width='120'></e-column>
+            <e-column field='tel' headerText='Telephone' textAlign='Right' format='c2' width='120'></e-column>
+            <e-column field='departement' headerText='Departement' width='140'></e-column>
+            <e-column field='position' headerText='Position' width='140'></e-column>
+        </e-columns>
+
+    </ejs-grid>

@@ -1,0 +1,39 @@
+<app-dashboard></app-dashboard>
+<div>
+    <div class="card">
+      <div class="card-header">
+          Edit Employee Info
+      </div>
+      <form [formGroup]="formgroup" (ngSubmit)="onSubmit()">
+        <div class="card-body">
+           
+            Name:
+            <input type="text" class="form-control" formControlName="name" />
+            <br />
+            Middle Name:
+            <input type="text" class="form-control" formControlName="mName" />
+            <br />
+            Last Name:
+            <input type="text" class="form-control" formControlName="lname" />
+            <br />
+            Tel:
+            <input type="tel" class="form-control" formControlName="tel" />
+            <br />
+            Departement:
+            <select class="form-control" formControlName="departement">
+              <option value="Accounting">Accounting</option>
+              <option value="Management">Management</option>
+              <option value="Guard">Guard</option>
+            </select>
+            <br />
+            Position:
+            <input type="text" class="form-control" formControlName="position" />
+            <br />
+        </div>
+        <div class="card-footer">
+            <input type="submit" class="btn btn-primary" value="Update" />
+        </div>
+      </form>  
+    </div>
+  </div>
+  
